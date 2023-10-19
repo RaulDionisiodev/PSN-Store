@@ -1,0 +1,21 @@
+.card__container {
+    position: relative; /* os outros elementos ficarão na frente dele */
+    border: 3px solid #3E4357;
+    border-radius: 10px;
+    width: 350px;
+    height: 500px;
+
+    display: flex;
+    overflow: hidden;
+    margin-top: 10px ;
+}
+
+.card__img {
+    min-width: 100%;
+    min-height: 100%;
+    transition: transform .8s; /*Criei uma transição chamada transform que vai levar 8s para acontecer*/
+}
+
+.card__img:hover {
+    transform: scale(1.1); /*dentro do hover eu chamo o transform que vai aumentar o tamanho da imagem em 110%*/
+}
