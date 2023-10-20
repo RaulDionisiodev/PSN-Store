@@ -1,38 +1,9 @@
 <div class="home__container">
-    <app-card
-    gameCover="assets/bt-1.jpg"
-    gameLabel="Digital"
-    gameType="DIGITAL | PS4"
-    gamePrice="R$ 299,00"
+    <app-card *ngFor="let data of gameData; let i = index"
+    gameCover={{data.gameCover}}
+    gameLabel={{data.gameLabel}}
+    gameType={{data.gameType}}
+    gamePrice={{data.gamePrice}}
     ></app-card>
-    <app-card
-    gameCover="assets/bt-4.jpg"
-    gameLabel="Exclusive"
-    gameType="DISC | PSA"
-    gamePrice="R$199,99"
-    ></app-card>
-    <app-card
-    gameCover="assets/bt-5.jpg"
-    gameLabel="BEST OF YEAR"
-    gameType="DISC | PSA"
-    gamePrice="R$599,99"
-    ></app-card>
-    <app-card
-    gameCover="assets/bt-bad-company-2.jpg"
-    gameLabel="NEW"
-    gameType="DISC | PSA | PS5"
-    gamePrice="R$199,99"
-    ></app-card>
-    <app-card
-    gameCover="assets/bt-hardline.jpg"
-    gameLabel="Exclusive"
-    gameType="DISC | PSA"
-    gamePrice="R$250,99"
-    ></app-card>
-    <app-card
-    gameCover="assets/ac-cover.jpg"
-    gameLabel="NEW"
-    gameType="DISC | PSA | PS3"
-    gamePrice="R$199,99"
-    ></app-card>
+   
 </div>
